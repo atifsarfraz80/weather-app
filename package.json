@@ -1,0 +1,24 @@
+{
+  "name": "js-app-template",
+  "version": "1.0.0",
+  "description": "Webpack Vanilla JS Starter Template",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --config webpack.config.js --open",
+    "build": "webpack --config webpack.config.js",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "format": "prettier --write \"src/**/*.{js,css,html}\""
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "html-webpack-plugin": "^5.6.0",
+    "prettier": "^3.2.5",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2"
+  }
+}
