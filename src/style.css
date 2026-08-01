@@ -213,72 +213,12 @@ body {
   line-height: 1.5;
 }
 
-.tab-menu {
-  display: flex;
-  gap: 1.5rem;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+.weather-icon{
+  height: 5em;
+  width: 5em;
 }
 
-.tab-btn {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  cursor: pointer;
-  padding-bottom: 0.3rem;
-  position: relative;
-}
 
-.tab-btn.active {
-  color: var(--accent-pink);
-  font-weight: 600;
-}
-
-.tab-btn.active::after {
-  content: '';
-  position: absolute;
-  bottom: -0.5rem;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--accent-pink);
-}
-
-.forecast-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-  gap: 0.8rem;
-}
-
-.forecast-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 1rem 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  transition: background 0.2s;
-}
-
-.forecast-card.active {
-  background: var(--bg-card-hover);
-  border-color: var(--accent-pink);
-}
-
-.alert-card {
-  background: rgba(255, 77, 109, 0.1);
-  border-left: 4px solid var(--accent-pink);
-  padding: 1rem;
-  border-radius: 4px;
-}
-
-.alert-heading {
-  color: var(--accent-pink);
-}
 
 .hidden {
   display: none !important;

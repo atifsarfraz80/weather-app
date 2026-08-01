@@ -35,6 +35,13 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.svg$/,
+        type: "asset/resource", // Emits a separate file and exports the URL
+        generator: {
+          filename: "assets/icons/[name][ext]", // Defines output directory
+        },
+      },
     ],
   },
 };

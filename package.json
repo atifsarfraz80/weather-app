@@ -4,8 +4,8 @@
   "description": "Webpack Vanilla JS Starter Template",
   "private": true,
   "scripts": {
-    "start": "webpack serve --config webpack.config.js --open",
-    "build": "webpack --config webpack.config.js",
+    "start": "webpack serve --config webpack.config.cjs --open",
+    "build": "webpack --config webpack.config.cjs",
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix",
     "format": "prettier --write \"src/**/*.{js,css,html}\""
