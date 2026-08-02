@@ -8,7 +8,8 @@
     "build": "webpack --config webpack.config.cjs",
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix",
-    "format": "prettier --write \"src/**/*.{js,css,html}\""
+    "format": "prettier --write \"src/**/*.{js,css,html}\"",
+    "deploy": "npm run build && git push origin --delete gh-pages 2>/dev/null; git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "css-loader": "^6.8.1",
