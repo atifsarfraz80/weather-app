@@ -3,18 +3,17 @@ import { loadDetails } from "./loadDetails.js";
 
 const appContainer = document.getElementById("app");
 const searchForm = document.getElementById("search-form");
-const weatherDashboard = document.getElementById("weather-dashboard");
+const searchInput = document.getElementById("search-input");
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
+  const query = searchInput.value.trim();
+  if (!query) return;
 
   if (appContainer.classList.contains("initial-state")) {
     appContainer.classList.remove("initial-state");
     appContainer.classList.add("searched-state");
-    weatherDashboard.classList.remove("hidden");
   }
 
-  // 2. Call your Visual Crossing API function here...
-  // fetchWeatherData(locationInput.value);
-  loadDetails(document.querySelector("#search-input").value);
+  loadDetails(query);
 });
